@@ -1,9 +1,15 @@
 import React from 'react';
-import { Text } from 'react-native';
+import {View} from 'react-native';
+import AppHeader from "../components/Header";
 
 const QrCode = () => {
     return (
-        <Text>Home screen</Text>
+        <View>
+            <AppHeader />
+            <Page>
+
+            </Page>
+        </View>
     );
 }
 
