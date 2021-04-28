@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
+import {StatusBar} from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import HomeScreen from "./src/containers/HomeScreen";
+import {NavigationContainer} from '@react-navigation/native';
+import {ThemeProvider} from 'react-native-elements';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Hung Dep Trai</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <SafeAreaProvider>
+            <ThemeProvider>
+                <NavigationContainer>
+                    <HomeScreen/>
+                    <StatusBar/>
+                </NavigationContainer>
+            </ThemeProvider>
+        </SafeAreaProvider>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 });
