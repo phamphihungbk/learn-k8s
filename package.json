@@ -5,7 +5,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "eslint": "eslint --fix-dry-run src/containers/**",
+    "eslint fix": "eslint --fix src/containers/**"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^5.11.10",
@@ -21,7 +23,11 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0"
+    "@babel/core": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-native": "^3.10.0"
   },
   "private": true
 }
