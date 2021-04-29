@@ -6,8 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "eslint": "eslint --fix-dry-run src/containers/**",
-    "eslint fix": "eslint --fix src/containers/**"
+    "eslint": "eslint --fix-dry-run src/**.js",
+    "eslint fix": "eslint --fix src/**.js"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^5.11.10",
