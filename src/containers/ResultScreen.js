@@ -2,15 +2,12 @@ import React from 'react';
 import {View} from 'react-native';
 import AppHeader from '../components/Header';
 
-const QrCode = () => {
+const ResultScreen = () => {
     return (
         <View>
-            <AppHeader />
-            <Page>
-
-            </Page>
+            <AppHeader/>
         </View>
     );
 }
 
-export default QrCode;
+export default ResultScreen;
